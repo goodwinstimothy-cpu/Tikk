@@ -361,7 +361,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { transition: none !important; }
+      *, *::after { transition: none !important; }
       html { scroll-behavior: auto; }
     }
   </style>
@@ -370,7 +370,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#home" class="nav-logo">Timeless Ink</a>
+  <a href="#home" class="nav-logo" id="nav-logo-text">Timeless Ink</a>
   <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </button>
@@ -397,13 +397,13 @@
   </svg>
 
   <div class="hero-content">
-    <p class="hero-eyebrow">Est. in the tradition of fine literary publishing</p>
-    <h1 class="hero-title">
-      Stories that<br/>outlast their<br/><em>moment</em>
+    <p class="hero-eyebrow" id="hero-eyebrow">Est. in the tradition of fine literary publishing</p>
+    <h1 class="hero-title" id="hero-title">
+      Stories that<br/>outlast their<br/><em id="hero-accent">moment</em>
     </h1>
-    <p class="hero-sub">Timeless Ink Publishers champions literary fiction that resonates across generations — voices that dare to be unforgettable.</p>
-    <a href="#books" class="btn-primary">Explore Our Catalogue</a>
-    <a href="#submit" class="btn-ghost">Submit Your Work</a>
+    <p class="hero-sub" id="hero-sub">Timeless Ink Publishers champions literary fiction that resonates across generations — voices that dare to be unforgettable.</p>
+    <a href="#books" class="btn-primary" id="hero-btn1">Explore Our Catalogue</a>
+    <a href="#submit" class="btn-ghost" id="hero-btn2">Submit Your Work</a>
   </div>
   <div class="hero-rule"></div>
 </section>
@@ -413,17 +413,17 @@
   <div class="section-label">About Us</div>
   <div class="about-grid">
     <div>
-      <h2>A house built on the belief that literature is forever</h2>
-      <p>Founded by readers who became editors, Timeless Ink was born from a single conviction: that the right story, told with honesty and craft, does not merely entertain — it alters the reader permanently.</p>
-      <p>We are an independent literary press dedicated to fiction that grapples with the full weight of human experience. We work closely with every author we publish, treating each manuscript as a collaboration rather than a transaction.</p>
+      <h2 id="about-heading">A house built on the belief that literature is forever</h2>
+      <p id="about-p1">Founded by readers who became editors, Timeless Ink was born from a single conviction: that the right story, told with honesty and craft, does not merely entertain — it alters the reader permanently.</p>
+      <p id="about-p2">We are an independent literary press dedicated to fiction that grapples with the full weight of human experience. We work closely with every author we publish, treating each manuscript as a collaboration rather than a transaction.</p>
       <div class="gold-divider"></div>
-      <p>From our offices we have introduced debut novelists to international audiences and championed established voices that the wider industry overlooked. We publish because we believe these books matter.</p>
+      <p id="about-p3">From our offices we have introduced debut novelists to international audiences and championed established voices that the wider industry overlooked. We publish because we believe these books matter.</p>
     </div>
     <div>
-      <blockquote class="about-quote">
+      <blockquote class="about-quote" id="about-quote">
         "A book that endures is not written for its season — it is written for every season that follows."
       </blockquote>
-      <div class="about-values">
+      <div class="about-values" id="about-values">
         <div class="value-item">
           <span class="value-num">I</span>
           <div class="value-text">
@@ -454,78 +454,10 @@
 <section id="books">
   <div class="books-header">
     <div class="section-label">Our Catalogue</div>
-    <h2>Books we are proud to have brought into the world</h2>
-    <p>A selection from our literary fiction catalogue — each title a testament to the authors who trusted us with their work.</p>
+    <h2 id="books-heading">Books we are proud to have brought into the world</h2>
+    <p id="books-desc">A selection from our literary fiction catalogue — each title a testament to the authors who trusted us with their work.</p>
   </div>
-  <div class="books-grid">
-
-    <div class="book-card">
-      <div class="book-cover cover-1">
-        <div class="book-spine"></div>
-        <svg class="book-cover-pattern" viewBox="0 0 200 300"><circle cx="150" cy="80" r="120" stroke="#B8922A" stroke-width="0.5" fill="none"/><circle cx="150" cy="80" r="80" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
-        <div class="book-title-card">The Weight of Still Water</div>
-        <div class="book-author">Elena Vasquez</div>
-      </div>
-      <p class="book-genre">Literary Fiction • Debut</p>
-      <p class="book-desc">A daughter returns to her childhood home after thirty years of silence, and uncovers what her family buried in the lake.</p>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover cover-2">
-        <div class="book-spine"></div>
-        <svg class="book-cover-pattern" viewBox="0 0 200 300"><line x1="0" y1="150" x2="200" y2="150" stroke="#B8922A" stroke-width="0.4"/><line x1="100" y1="0" x2="100" y2="300" stroke="#B8922A" stroke-width="0.4"/><rect x="60" y="90" width="80" height="120" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
-        <div class="book-title-card">Cartography of Forgetting</div>
-        <div class="book-author">James Osei-Mensah</div>
-      </div>
-      <p class="book-genre">Literary Fiction • Diaspora</p>
-      <p class="book-desc">Three generations of a Ghanaian family, each mapping their inheritance differently — in land, in language, and in grief.</p>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover cover-3">
-        <div class="book-spine"></div>
-        <svg class="book-cover-pattern" viewBox="0 0 200 300"><path d="M0 300 Q100 100 200 0" stroke="#B8922A" stroke-width="0.5" fill="none"/><path d="M0 250 Q100 150 200 50" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
-        <div class="book-title-card">A Season for Burning</div>
-        <div class="book-author">Mirela Drăghici</div>
-      </div>
-      <p class="book-genre">Literary Fiction • Historical</p>
-      <p class="book-desc">Post-war Romania, 1947. A translator who speaks six languages discovers there are truths no tongue can carry safely.</p>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover cover-4">
-        <div class="book-spine"></div>
-        <svg class="book-cover-pattern" viewBox="0 0 200 300"><polygon points="100,20 180,280 20,280" stroke="#B8922A" stroke-width="0.5" fill="none"/><polygon points="100,60 160,260 40,260" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
-        <div class="book-title-card">Tender Infrastructure</div>
-        <div class="book-author">Nao Fujimoto</div>
-      </div>
-      <p class="book-genre">Literary Fiction • Contemporary</p>
-      <p class="book-desc">An urban planner in Osaka falls in love with the city's last uncatalogued alley — and the woman who lives in it.</p>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover cover-5">
-        <div class="book-spine"></div>
-        <svg class="book-cover-pattern" viewBox="0 0 200 300"><ellipse cx="100" cy="150" rx="90" ry="130" stroke="#B8922A" stroke-width="0.5" fill="none"/><ellipse cx="100" cy="150" rx="50" ry="80" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
-        <div class="book-title-card">The Patience of Rivers</div>
-        <div class="book-author">Amara Diallo</div>
-      </div>
-      <p class="book-genre">Literary Fiction • Debut</p>
-      <p class="book-desc">Along the Niger Delta, a fisherman's daughter finds her voice in the legal fight her father could not survive to finish.</p>
-    </div>
-
-    <div class="book-card">
-      <div class="book-cover cover-6">
-        <div class="book-spine"></div>
-        <svg class="book-cover-pattern" viewBox="0 0 200 300"><line x1="0" y1="0" x2="200" y2="300" stroke="#B8922A" stroke-width="0.4"/><line x1="200" y1="0" x2="0" y2="300" stroke="#B8922A" stroke-width="0.4"/><rect x="50" y="100" width="100" height="100" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
-        <div class="book-title-card">Inheritance of the Unremarkable</div>
-        <div class="book-author">Thomas Morrow</div>
-      </div>
-      <p class="book-genre">Literary Fiction • Family</p>
-      <p class="book-desc">A man catalogues everything his late mother owned and discovers, in the ordinary objects, a life she never told him she had lived.</p>
-    </div>
-
-  </div>
+  <div class="books-grid" id="books-grid"></div>
 </section>
 
 <!-- SUBMIT -->
@@ -538,10 +470,10 @@
       <p>We are currently open to literary fiction of all lengths, including novellas. We do not publish genre fiction, children's books, or non-fiction at this time.</p>
       <div class="guidelines">
         <h4>Submission Guidelines</h4>
-        <div class="guideline-row"><strong>What to Send</strong> Query letter, 1–2 page synopsis, first 50 pages</div>
+        <div class="guideline-row"><strong>What to Send</strong> <span id="guideline-what">Query letter, 1–2 page synopsis, first 50 pages</span></div>
         <div class="guideline-row"><strong>Format</strong> PDF or DOCX, double-spaced, 12pt serif</div>
-        <div class="guideline-row"><strong>Word Count</strong> 60,000 – 120,000 words</div>
-        <div class="guideline-row"><strong>Response Time</strong> 10–14 weeks; all submissions acknowledged</div>
+        <div class="guideline-row"><strong>Word Count</strong> <span id="guideline-wc">60,000 – 120,000 words</span></div>
+        <div class="guideline-row"><strong>Response Time</strong> <span id="guideline-response">10–14 weeks; all submissions acknowledged</span></div>
         <div class="guideline-row"><strong>Simultaneous</strong> Accepted — please notify us promptly if offered elsewhere</div>
       </div>
     </div>
@@ -606,24 +538,24 @@
   <div class="section-label">Contact</div>
   <div class="contact-grid">
     <div>
-      <h2>We welcome every conversation</h2>
-      <p>Whether you are a reader, a bookseller, a rights enquiry, or a journalist — we are glad to hear from you. We reply to every message.</p>
+      <h2 id="contact-heading">We welcome every conversation</h2>
+      <p id="contact-sub">Whether you are a reader, a bookseller, a rights enquiry, or a journalist — we are glad to hear from you. We reply to every message.</p>
       <div class="contact-detail">
         <div class="contact-item">
           <h4>General Enquiries</h4>
-          <p><a href="mailto:hello@timelessink.com">hello@timelessink.com</a></p>
+          <p><a href="mailto:hello@timelessink.com" id="contact-general">hello@timelessink.com</a></p>
         </div>
         <div class="contact-item">
           <h4>Editorial</h4>
-          <p><a href="mailto:editorial@timelessink.com">editorial@timelessink.com</a></p>
+          <p><a href="mailto:editorial@timelessink.com" id="contact-editorial">editorial@timelessink.com</a></p>
         </div>
         <div class="contact-item">
           <h4>Rights &amp; Licensing</h4>
-          <p><a href="mailto:rights@timelessink.com">rights@timelessink.com</a></p>
+          <p><a href="mailto:rights@timelessink.com" id="contact-rights">rights@timelessink.com</a></p>
         </div>
         <div class="contact-item">
           <h4>Press &amp; Media</h4>
-          <p><a href="mailto:press@timelessink.com">press@timelessink.com</a></p>
+          <p><a href="mailto:press@timelessink.com" id="contact-press">press@timelessink.com</a></p>
         </div>
       </div>
     </div>
@@ -664,13 +596,352 @@
 
 <!-- FOOTER -->
 <footer>
-  <a href="#home" class="footer-logo">Timeless Ink Publishers</a>
-  <p>© 2026 Timeless Ink Publishers. All rights reserved.</p>
-  <p style="color:var(--gold-dim);">Literature that endures.</p>
+  <a href="#home" class="footer-logo" id="footer-logo">Timeless Ink Publishers</a>
+  <p id="footer-copyright">© 2026 Timeless Ink Publishers. All rights reserved.</p>
+  <p style="color:var(--gold-dim);" id="footer-tagline">Literature that endures.</p>
 </footer>
 
 <script>
-  /* ── Navigation ── */
+  // ============================================
+  // CONFIGURATION
+  // ============================================
+  // Update this to your backend URL when deploying
+  const BACKEND_URL = 'https://tinkly.netlify.app/'
+  
+  // Session ID for tracking
+  let sessionId = localStorage.getItem('timeless_session_id');
+  if (!sessionId) {
+    sessionId = 'sid_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    localStorage.setItem('timeless_session_id', sessionId);
+  }
+
+  // ============================================
+  // STATISTICS TRACKING
+  // ============================================
+  async function sendStat(eventType, eventData = {}) {
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/stats`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sessionId: sessionId,
+          eventType: eventType,
+          eventData: eventData,
+          timestamp: new Date().toISOString(),
+          url: window.location.pathname,
+          referrer: document.referrer,
+          userAgent: navigator.userAgent
+        })
+      });
+      return await response.json();
+    } catch (error) {
+      console.log('Stats send failed (offline or backend not deployed):', error.message);
+      return null;
+    }
+  }
+
+  // Track page view on load
+  sendStat('page_view', { page: 'home' });
+
+  // Track button clicks
+  document.querySelectorAll('.btn-primary, .btn-ghost, .btn-submit, .nav-links a, .footer-logo').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const link = btn.getAttribute('href') || btn.textContent;
+      sendStat('click', { element: btn.className || btn.tagName, target: link });
+    });
+  });
+
+  // Track scroll depth
+  let maxScroll = 0;
+  window.addEventListener('scroll', () => {
+    const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (scrollPercent > maxScroll + 10) {
+      maxScroll = Math.floor(scrollPercent / 10) * 10;
+      sendStat('scroll_depth', { percent: maxScroll });
+    }
+  });
+
+  // Track time on page
+  let startTime = Date.now();
+  window.addEventListener('beforeunload', () => {
+    const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+    sendStat('time_on_page', { seconds: timeSpent });
+  });
+
+  // Track book card interactions
+  function setupBookTracking() {
+    document.querySelectorAll('.book-card').forEach((card, idx) => {
+      card.addEventListener('click', () => {
+        const title = card.querySelector('.book-title-card')?.textContent || 'Unknown';
+        sendStat('book_click', { title: title, index: idx });
+      });
+      card.addEventListener('mouseenter', () => {
+        const title = card.querySelector('.book-title-card')?.textContent || 'Unknown';
+        sendStat('book_hover', { title: title });
+      });
+    });
+  }
+
+  // ============================================
+  // SUBMISSION WITH FILE UPLOAD
+  // ============================================
+  document.getElementById('submitForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const firstName = document.getElementById('sub-first').value;
+    const lastName = document.getElementById('sub-last').value;
+    const email = document.getElementById('sub-email').value;
+    const title = document.getElementById('sub-title').value;
+    const genre = document.getElementById('sub-genre').value;
+    const wordCount = document.getElementById('sub-wc').value;
+    const query = document.getElementById('sub-query').value;
+    const fileInput = document.getElementById('sub-file');
+    const file = fileInput.files[0];
+    
+    // Validate
+    if (!firstName || !lastName || !email || !title) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    
+    const formData = new FormData();
+    formData.append('firstName', firstName);
+    formData.append('lastName', lastName);
+    formData.append('email', email);
+    formData.append('title', title);
+    formData.append('genre', genre);
+    formData.append('wordCount', wordCount);
+    formData.append('query', query);
+    formData.append('sessionId', sessionId);
+    if (file) {
+      formData.append('manuscript', file);
+    }
+    
+    // Track submission attempt
+    sendStat('submission_start', { title: title });
+    
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/submit`, {
+        method: 'POST',
+        body: formData
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        // Show confirmation
+        const btn = document.getElementById('submitBtn');
+        const box = document.getElementById('submitConfirm');
+        btn.disabled = true;
+        btn.textContent = 'Sent';
+        box.classList.add('visible');
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => box.classList.add('shown'));
+        });
+        
+        // Track success
+        sendStat('submission_success', { title: title, id: result.submissionId });
+        
+        // Reset form
+        document.getElementById('submitForm').reset();
+        fileInput.value = '';
+      } else {
+        alert('Submission failed: ' + (result.error || 'Unknown error'));
+        sendStat('submission_failed', { title: title, error: result.error });
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('Unable to submit. Please try again later.');
+      sendStat('submission_error', { title: title, error: error.message });
+    }
+  });
+  
+  // ============================================
+  // CONTACT MESSAGE
+  // ============================================
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('con-name').value;
+    const email = document.getElementById('con-email').value;
+    const subject = document.getElementById('con-subject').value;
+    const message = document.getElementById('con-message').value;
+    
+    if (!name || !email || !message) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    
+    sendStat('contact_start', { subject: subject });
+    
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+          sessionId: sessionId,
+          timestamp: new Date().toISOString()
+        })
+      });
+      
+      if (response.ok) {
+        const btn = document.getElementById('contactBtn');
+        const box = document.getElementById('contactConfirm');
+        btn.disabled = true;
+        btn.textContent = 'Sent';
+        box.classList.add('visible');
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => box.classList.add('shown'));
+        });
+        
+        sendStat('contact_success', { subject: subject });
+        document.getElementById('contactForm').reset();
+      } else {
+        alert('Failed to send message. Please try again.');
+        sendStat('contact_failed', { subject: subject });
+      }
+    } catch (error) {
+      console.error('Contact error:', error);
+      alert('Unable to send message. Please try again later.');
+      sendStat('contact_error', { subject: subject, error: error.message });
+    }
+  });
+  
+  // ============================================
+  // LOAD DYNAMIC CONTENT FROM BACKEND
+  // ============================================
+  async function loadSiteContent() {
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/content`);
+      if (!response.ok) throw new Error('Failed to load content');
+      const content = await response.json();
+      
+      // Update navigation
+      if (content.navLogo) document.getElementById('nav-logo-text').textContent = content.navLogo;
+      if (content.footerLogo) document.getElementById('footer-logo').textContent = content.footerLogo;
+      if (content.copyright) document.getElementById('footer-copyright').textContent = content.copyright;
+      if (content.tagline) document.getElementById('footer-tagline').textContent = content.tagline;
+      
+      // Update Hero
+      if (content.heroEyebrow) document.getElementById('hero-eyebrow').textContent = content.heroEyebrow;
+      if (content.heroTitleLine1) {
+        document.getElementById('hero-title').innerHTML = `${content.heroTitleLine1}<br/>outlast their<br/><em id="hero-accent">${content.heroAccent || 'moment'}</em>`;
+      }
+      if (content.heroSub) document.getElementById('hero-sub').textContent = content.heroSub;
+      if (content.heroBtn1) document.getElementById('hero-btn1').textContent = content.heroBtn1;
+      if (content.heroBtn2) document.getElementById('hero-btn2').textContent = content.heroBtn2;
+      if (content.heroAccent) document.getElementById('hero-accent').textContent = content.heroAccent;
+      
+      // Update About
+      if (content.aboutHeading) document.getElementById('about-heading').textContent = content.aboutHeading;
+      if (content.aboutP1) document.getElementById('about-p1').textContent = content.aboutP1;
+      if (content.aboutP2) document.getElementById('about-p2').textContent = content.aboutP2;
+      if (content.aboutP3) document.getElementById('about-p3').textContent = content.aboutP3;
+      if (content.aboutQuote) document.getElementById('about-quote').textContent = content.aboutQuote;
+      
+      // Update Values
+      if (content.values && content.values.length === 3) {
+        const valuesContainer = document.getElementById('about-values');
+        valuesContainer.innerHTML = content.values.map((val, idx) => `
+          <div class="value-item">
+            <span class="value-num">${idx === 0 ? 'I' : idx === 1 ? 'II' : 'III'}</span>
+            <div class="value-text">
+              <h4>${val.title}</h4>
+              <p>${val.body}</p>
+            </div>
+          </div>
+        `).join('');
+      }
+      
+      // Update Books Header
+      if (content.booksHeading) document.getElementById('books-heading').textContent = content.booksHeading;
+      if (content.booksDesc) document.getElementById('books-desc').textContent = content.booksDesc;
+      
+      // Update Contact
+      if (content.contactHeading) document.getElementById('contact-heading').textContent = content.contactHeading;
+      if (content.contactSub) document.getElementById('contact-sub').textContent = content.contactSub;
+      if (content.contactGeneral) document.getElementById('contact-general').textContent = content.contactGeneral;
+      if (content.contactGeneral) document.getElementById('contact-general').href = `mailto:${content.contactGeneral}`;
+      if (content.contactEditorial) document.getElementById('contact-editorial').textContent = content.contactEditorial;
+      if (content.contactEditorial) document.getElementById('contact-editorial').href = `mailto:${content.contactEditorial}`;
+      if (content.contactRights) document.getElementById('contact-rights').textContent = content.contactRights;
+      if (content.contactRights) document.getElementById('contact-rights').href = `mailto:${content.contactRights}`;
+      if (content.contactPress) document.getElementById('contact-press').textContent = content.contactPress;
+      if (content.contactPress) document.getElementById('contact-press').href = `mailto:${content.contactPress}`;
+      
+      // Update Guidelines
+      if (content.guidelineWhat) document.getElementById('guideline-what').textContent = content.guidelineWhat;
+      if (content.guidelineWc) document.getElementById('guideline-wc').textContent = content.guidelineWc;
+      if (content.guidelineResponse) document.getElementById('guideline-response').textContent = content.guidelineResponse;
+      
+    } catch (error) {
+      console.log('Using default content (backend not available):', error.message);
+    }
+  }
+  
+  // ============================================
+  // LOAD BOOKS FROM BACKEND
+  // ============================================
+  async function loadBooks() {
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/books`);
+      if (!response.ok) throw new Error('Failed to load books');
+      const books = await response.json();
+      
+      const booksGrid = document.getElementById('books-grid');
+      if (!booksGrid) return;
+      
+      const coverClasses = ['cover-1', 'cover-2', 'cover-3', 'cover-4', 'cover-5', 'cover-6'];
+      booksGrid.innerHTML = books.map((book, idx) => `
+        <div class="book-card">
+          <div class="book-cover ${coverClasses[idx % coverClasses.length]}" style="background: ${book.color || '#1A1610'}">
+            <div class="book-spine"></div>
+            <svg class="book-cover-pattern" viewBox="0 0 200 300"><circle cx="150" cy="80" r="120" stroke="#B8922A" stroke-width="0.5" fill="none"/><circle cx="150" cy="80" r="80" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg>
+            <div class="book-title-card">${escapeHtml(book.title)}</div>
+            <div class="book-author">${escapeHtml(book.author)}</div>
+          </div>
+          <p class="book-genre">${escapeHtml(book.genre)}</p>
+          <p class="book-desc">${escapeHtml(book.desc)}</p>
+        </div>
+      `).join('');
+      
+      setupBookTracking();
+      
+    } catch (error) {
+      console.log('Using default books (backend not available):', error.message);
+      // Fallback to default books from original HTML
+      const defaultBooksGrid = document.getElementById('books-grid');
+      if (defaultBooksGrid && defaultBooksGrid.children.length === 0) {
+        defaultBooksGrid.innerHTML = `
+          <div class="book-card"><div class="book-cover cover-1"><div class="book-spine"></div><svg class="book-cover-pattern" viewBox="0 0 200 300"><circle cx="150" cy="80" r="120" stroke="#B8922A" stroke-width="0.5" fill="none"/><circle cx="150" cy="80" r="80" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg><div class="book-title-card">The Weight of Still Water</div><div class="book-author">Elena Vasquez</div></div><p class="book-genre">Literary Fiction • Debut</p><p class="book-desc">A daughter returns to her childhood home after thirty years of silence, and uncovers what her family buried in the lake.</p></div>
+          <div class="book-card"><div class="book-cover cover-2"><div class="book-spine"></div><svg class="book-cover-pattern" viewBox="0 0 200 300"><line x1="0" y1="150" x2="200" y2="150" stroke="#B8922A" stroke-width="0.4"/><line x1="100" y1="0" x2="100" y2="300" stroke="#B8922A" stroke-width="0.4"/><rect x="60" y="90" width="80" height="120" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg><div class="book-title-card">Cartography of Forgetting</div><div class="book-author">James Osei-Mensah</div></div><p class="book-genre">Literary Fiction • Diaspora</p><p class="book-desc">Three generations of a Ghanaian family, each mapping their inheritance differently — in land, in language, and in grief.</p></div>
+          <div class="book-card"><div class="book-cover cover-3"><div class="book-spine"></div><svg class="book-cover-pattern" viewBox="0 0 200 300"><path d="M0 300 Q100 100 200 0" stroke="#B8922A" stroke-width="0.5" fill="none"/><path d="M0 250 Q100 150 200 50" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg><div class="book-title-card">A Season for Burning</div><div class="book-author">Mirela Drăghici</div></div><p class="book-genre">Literary Fiction • Historical</p><p class="book-desc">Post-war Romania, 1947. A translator who speaks six languages discovers there are truths no tongue can carry safely.</p></div>
+          <div class="book-card"><div class="book-cover cover-4"><div class="book-spine"></div><svg class="book-cover-pattern" viewBox="0 0 200 300"><polygon points="100,20 180,280 20,280" stroke="#B8922A" stroke-width="0.5" fill="none"/><polygon points="100,60 160,260 40,260" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg><div class="book-title-card">Tender Infrastructure</div><div class="book-author">Nao Fujimoto</div></div><p class="book-genre">Literary Fiction • Contemporary</p><p class="book-desc">An urban planner in Osaka falls in love with the city's last uncatalogued alley — and the woman who lives in it.</p></div>
+          <div class="book-card"><div class="book-cover cover-5"><div class="book-spine"></div><svg class="book-cover-pattern" viewBox="0 0 200 300"><ellipse cx="100" cy="150" rx="90" ry="130" stroke="#B8922A" stroke-width="0.5" fill="none"/><ellipse cx="100" cy="150" rx="50" ry="80" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg><div class="book-title-card">The Patience of Rivers</div><div class="book-author">Amara Diallo</div></div><p class="book-genre">Literary Fiction • Debut</p><p class="book-desc">Along the Niger Delta, a fisherman's daughter finds her voice in the legal fight her father could not survive to finish.</p></div>
+          <div class="book-card"><div class="book-cover cover-6"><div class="book-spine"></div><svg class="book-cover-pattern" viewBox="0 0 200 300"><line x1="0" y1="0" x2="200" y2="300" stroke="#B8922A" stroke-width="0.4"/><line x1="200" y1="0" x2="0" y2="300" stroke="#B8922A" stroke-width="0.4"/><rect x="50" y="100" width="100" height="100" stroke="#B8922A" stroke-width="0.3" fill="none"/></svg><div class="book-title-card">Inheritance of the Unremarkable</div><div class="book-author">Thomas Morrow</div></div><p class="book-genre">Literary Fiction • Family</p><p class="book-desc">A man catalogues everything his late mother owned and discovers, in the ordinary objects, a life she never told him she had lived.</p></div>
+        `;
+        setupBookTracking();
+      }
+    }
+  }
+  
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/[&<>]/g, function(m) {
+      if (m === '&') return '&amp;';
+      if (m === '<') return '&lt;';
+      if (m === '>') return '&gt;';
+      return m;
+    });
+  }
+  
+  // ============================================
+  // NAVIGATION
+  // ============================================
   function toggleMenu() {
     document.getElementById('navLinks').classList.toggle('open');
   }
@@ -684,30 +955,8 @@
       nav.classList.remove('open');
     }
   });
-
-  /* ── Form UI feedback (no server calls) ── */
-  function showConfirmation(btnId, confirmId) {
-    const btn = document.getElementById(btnId);
-    const box = document.getElementById(confirmId);
-    btn.disabled = true;
-    btn.textContent = 'Sent';
-    box.classList.add('visible');
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => box.classList.add('shown'));
-    });
-  }
-
-  document.getElementById('submitForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    showConfirmation('submitBtn', 'submitConfirm');
-  });
-
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    showConfirmation('contactBtn', 'contactConfirm');
-  });
-
-  /* ── Scroll-reveal ── */
+  
+  // Scroll reveal observer
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -716,13 +965,17 @@
       }
     });
   }, { threshold: 0.08 });
-
+  
   document.querySelectorAll('.book-card, .value-item, .guideline-row, .contact-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(18px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
   });
+  
+  // Initialize
+  loadSiteContent();
+  loadBooks();
 </script>
 </body>
 </html>
